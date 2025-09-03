@@ -20,3 +20,20 @@
 - Join features like CPI, fuel price, and holiday flags
 - Quantify impact of holidays/promotions on sales
 - Build interactive dashboard (Tableau/Power BI)
+
+  Top holiday weeks by revenue
+Saved as sql/top_holiday_weeks.csv. These spikes align with major retail periods and validate seasonal planning.
+
+Store-level lift
+Saved as sql/holiday_lift_by_store.csv. Some stores show outsized holiday uplift, implying targeted promo and staffing should be localized rather than blanket.
+
+Methodology
+
+SQL sanity and aggregation on IsHoliday
+
+Python cross-check for trend visualization
+
+Reproducible artifacts: queries in sql/day3_queries.sql, plots in notebooks/01_EDA_python.ipynb
+
+Takeaway
+Holiday weeks materially affect revenue, but the effect is uneven across stores. Strategy should prioritize high-lift stores for inventory, promo, and staffing. Low-lift stores need localized tactics, not more discounting.
